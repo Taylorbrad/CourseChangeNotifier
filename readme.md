@@ -29,15 +29,7 @@ To get the program running, there are a few things we will need:
 
 Navigate to https://byulogin.awsapps.com/start#/ to get the AWS environment variables for the byu-org-trn account.
 
-![alt text][logo]
-
-[logo]: src/img/awsCreds.png "AWS Creds"
-
 Click the box under "Option 1: ..." to copy the Credentials, then paste it into a command prompt before running the project.
-
-![alt text][logo2]
-
-[logo2]: src/img/awsPrompt.png "AWS Prompt"
 
 
 ### 2. Tyk Bearer token

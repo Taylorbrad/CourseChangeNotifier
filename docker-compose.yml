@@ -1,0 +1,12 @@
+version: '3'
+services:
+  db: # this is the service that defines how our database should be run
+    image: "postgres:14" # You can include a postgres docker image to mimic your relational RDS database locally
+    ports:
+      - "5432:5432" # This is the port postgres uses traditionally
+    volumes: # This tells postgres to map the data of the database into a local folder
+      - "./db:/var/lib/postgresql/data"
+  adminer: # this is the service that allows us to edit the database with a gui
+    image: adminer
+    ports:
+      - 8080:8080

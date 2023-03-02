@@ -1,0 +1,27 @@
+creds.tfvars
+# ignore installed packages
+node_modules
+# ignore hidden files made by Jetbrains
+.idea
+# ignore terraform files and directories
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars
+# Ignore hidden OS files (mac only)
+.DS_Store
+# The database folder alone is really big and doesn't work when cloned on other computers, so ignore it
+db
+#DONT however, ignore the db.zip. We need to commit that.
+# if you end up using .env or .env-db, we need to not include those either.
+.env*
+terraform.exe
+.terraform.lock.hcl
+.parcel-cache/0eec3c94b448e577
+.parcel-cache/0f817512aa19eef7.txt
+.parcel-cache/a9f5484dda8bfe2c
+.parcel-cache/be421f5ad77beb1a
+*.mdb
+.parcel-cache/faf76a89a5ae82aa
+src/dist
+.env-db

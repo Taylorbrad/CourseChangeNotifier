@@ -1,0 +1,34 @@
+{
+  "name": "TechProject",
+  "version": "1.0.0",
+  "dependencies": {
+    "@google-cloud/local-auth": "^2.1.0",
+    "aws-sdk": "^2.1301.0",
+    "axios": "^1.2.4",
+    "fuzzy": "^0.1.3",
+    "google-auth-library": "^8.7.0",
+    "googleapis": "^105.0.0",
+    "inquirer": "^9.1.4",
+    "inquirer-autocomplete-prompt": "^3.0.0",
+    "nodemailer": "^6.9.1",
+    "open": "^8.4.0",
+    "pg": "^8.8.0",
+    "prompt-sync": "^4.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "server-destroy": "^1.0.1"
+  },
+  "type": "module",
+  "devDependencies": {
+    "process": "^0.11.10"
+  },
+  "scripts": {
+    "database": "docker-compose up -d",
+    "shutdown": "docker-compose down",
+    "start-client": "node index.js",
+    "start-server": "node initServer.js",
+    "all": "npm run database && npm run start-client",
+    "extract-db": "tar.exe -xf db.zip",
+    "compress-db": "tar.exe -acf db.zip db"
+  }
+}
